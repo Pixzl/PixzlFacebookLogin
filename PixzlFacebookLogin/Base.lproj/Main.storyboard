@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="13C-SV-3AZ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PixzlFacebookLogin-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WlM-6S-jTi">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="6o6-OR-PcQ"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1N8-z3-8T7" customClass="FBSDKLoginButton">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bI-2R-nio">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="B8M-n1-fya"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7w-NC-uS6">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="z2d-l7-Zlb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f7w-NC-uS6" firstAttribute="trailing" secondItem="1N8-z3-8T7" secondAttribute="trailing" id="45h-eC-rwL"/>
+                            <constraint firstItem="0bI-2R-nio" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4aX-4e-ZSD"/>
+                            <constraint firstItem="1N8-z3-8T7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="587" id="792-4g-55J"/>
+                            <constraint firstItem="f7w-NC-uS6" firstAttribute="leading" secondItem="1N8-z3-8T7" secondAttribute="leading" id="GuE-xS-TEg"/>
+                            <constraint firstItem="0bI-2R-nio" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="KkJ-Pp-PZz"/>
+                            <constraint firstAttribute="bottom" secondItem="1N8-z3-8T7" secondAttribute="bottom" constant="20" symbolic="YES" id="Ldj-GV-mF4"/>
+                            <constraint firstItem="WlM-6S-jTi" firstAttribute="centerX" secondItem="0bI-2R-nio" secondAttribute="centerX" id="RuT-nn-sU3"/>
+                            <constraint firstItem="WlM-6S-jTi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="WSr-xD-GFw"/>
+                            <constraint firstItem="0bI-2R-nio" firstAttribute="top" secondItem="WlM-6S-jTi" secondAttribute="bottom" constant="25" id="f35-y4-13m"/>
+                            <constraint firstItem="0bI-2R-nio" firstAttribute="trailing" secondItem="f7w-NC-uS6" secondAttribute="trailing" id="gfT-6Z-SYH"/>
+                            <constraint firstItem="f7w-NC-uS6" firstAttribute="top" secondItem="0bI-2R-nio" secondAttribute="bottom" constant="8" symbolic="YES" id="mSd-6N-FYb"/>
+                            <constraint firstItem="WlM-6S-jTi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="96" id="pO3-fu-eFR"/>
+                            <constraint firstItem="0bI-2R-nio" firstAttribute="leading" secondItem="f7w-NC-uS6" secondAttribute="leading" id="xIV-C2-hCj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PixzlFacebookLogin" id="3VK-GU-xdk"/>
+                    <connections>
+                        <outlet property="accountImage" destination="WlM-6S-jTi" id="8eA-Rw-zHN"/>
+                        <outlet property="helloLabel" destination="0bI-2R-nio" id="lEJ-lB-cEO"/>
+                        <outlet property="usernameLabel" destination="f7w-NC-uS6" id="Mq0-Lw-e1Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1095.2" y="-549.17541229385313"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="y88-QH-Z3G">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="13C-SV-3AZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XQZ-2T-IoJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="F0v-Qw-yBD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ItQ-TI-WmF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="349.60000000000002" y="-549.17541229385313"/>
+        </scene>
+    </scenes>
+</document>
