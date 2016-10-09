@@ -7,7 +7,7 @@
 
 The easiest way to integrate Facebook Login into your iOS app.
 
-## Screenshot
+## Important
 ![Screenshot](screenshot.png)
 
 Edit the .plist and add your Facebook application informations.
@@ -53,3 +53,4 @@ Build and run the application.
 ## Device Compatibility
 
 - iPhone
+- iPad
