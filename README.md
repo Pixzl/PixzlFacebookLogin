@@ -48,7 +48,7 @@ Build and run the application.
 
 - iPhone 7 Plus running iOS 10.1
 - iPhone 7 running iOS iOS 10.0.2
-- iPad 6s Plus running iOS 9.3.3
+- iPhone 6s Plus running iOS 9.3.3
 
 ## Device Compatibility
 
